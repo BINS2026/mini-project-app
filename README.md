@@ -1,16 +1,32 @@
-# React + Vite
+# Mini Project 1 - Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React task management application built for the AIM course. It fetches dynamic task data from the public [DummyJSON API](https://dummyjson.com/todos), allowing users to browse tasks, search locally, and view specific task details via dynamic routing.
 
-Currently, two official plugins are available:
+## Features & Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **3 Routes**: Includes Home (`/`), Task List (`/tasks`), and Dynamic Task Details (`/tasks/:id`).
+- **Data Fetching**: Powered by TanStack Query (`@tanstack/react-query`) with structured query keys (`['todos']` and `['todo', id]`).
+- **State Handling**: Comprehensive UI state handling for loading, error, and empty search results.
+- **Local State (`useState`)**: Client-side task filtering using a controlled search bar input.
+- **Styling**: Styled using Tailwind CSS v3.
 
-## React Compiler
+## Routes Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `/` — Welcome dashboard and navigation quick links.
+- `/tasks` — Displays all tasks with real-time search and status badges.
+- `/tasks/:id` — Displays full details for a selected task by ID.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React (Vite)
+- **Routing**: React Router v6
+- **Server State**: TanStack Query (React Query)
+- **Styling**: Tailwind CSS
+- **API**: DummyJSON API (`https://dummyjson.com/todos`)
+
+## Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone <YOUR_GITHUB_REPO_URL>
+   cd mini-project-app
