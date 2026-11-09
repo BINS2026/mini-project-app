@@ -8,7 +8,7 @@ export default function App() {
       <div className="min-h-screen bg-gray-50 text-gray-800">
       <header className="bg-white border-b shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-gray-900">Task Manager</h1>
+          <h1 className="text-xl font-bold text-gray-900">MyTrack</h1>
           <nav className="flex gap-4">
             <Link to="/" className="text-gray-600 hover:text-blue-600 font-medium">
               Home
